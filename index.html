@@ -567,6 +567,16 @@
       color: rgba(255,255,255,.6);
     }
 
+    /* Foto contacto más pequeña en desktop */
+    .foto-contacto img {
+      width: 50%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      margin: 0 auto;
+    }
+
     /* ── FOOTER ── */
     footer {
       padding: 2.5rem 4rem;
@@ -638,6 +648,14 @@
       .obra-cover { width: 160px; }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EW2V4C2X7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6EW2V4C2X7');
+  </script>
 </head>
 <body>
 
@@ -708,7 +726,7 @@
           <h3>Nueve Punto Cinco</h3>
           <p class="obra-year">2021</p>
           <p class="obra-desc">
-            La novela de debut de Aldonza González. Una historia que marcó el inicio de su voz propia como narradora de ficción especulativa. <em>Nueve punto cinco</em> es una novela de ciencia ficción ambientada en Zaragoza que reflexiona sobre el destino, el miedo a la muerte y la relación entre memoria e identidad. A través de una narrativa íntima y profunda, Aldonza González nos invita a cuestionar qué nos define como individuos y hasta qué punto nuestras experiencias y recuerdos conforman nuestra esencia.
+            La novela de debut de Aldonza González. Una historia que marcó el inicio de su voz propia como narradora de ficción especulativa. <em>Nueve punto cinco</em> es una novela de ciencia ficción que reflexiona sobre el destino, el miedo a la muerte y la relación entre memoria e identidad. A través de una narrativa íntima y profunda, Aldonza González nos invita a cuestionar qué nos define como individuos y hasta qué punto nuestras experiencias y recuerdos conforman nuestra esencia.
           </p>
           <div class="obra-comprar">
             <p class="obra-comprar-label">Dónde conseguirla</p>
@@ -845,7 +863,7 @@
         </li>
       </ul>
     </div>
-    <div class="foto-evento-wrap animate">
+    <div class="foto-evento-wrap foto-contacto animate">
       <img src="escritora_club_de_lectura_aldonza_vastagos.jpg" alt="Aldonza González" style="object-position: center top;" />
     </div>
   </section>
